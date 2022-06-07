@@ -1,1 +1,1 @@
-# rsschool-cv
+https://ltitov.github.io/rsschool-cv/cv

@@ -10,6 +10,10 @@ body {
   padding: 0 20px;
 }
 
+%sectionPadding {
+  padding: 80px 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -21,6 +25,12 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.5;
 }
 
 
@@ -83,7 +93,7 @@ body {
 //========================================================================================================================================================
 
 .hero {
-  padding: 80px 5%;
+  @extend %sectionPadding;
 
   // .hero__container
   &__container {
@@ -178,3 +188,28 @@ body {
     }
   }
 }
+
+//========================================================================================================================================================
+
+
+.about {
+  @extend %sectionPadding;
+
+  // .about__container
+  &__container {}
+
+  // .about__title
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  // .about__description
+  &__description {
+    max-width: 650px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+  }
+}
+
+//========================================================================================================================================================

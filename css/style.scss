@@ -44,6 +44,7 @@ body {
   line-height: 1.5;
 }
 
+//========================================================================================================================================================
 
 .header {
 
@@ -335,5 +336,65 @@ body {
   // .languages__text
   &__text {
     @extend %description;
+  }
+}
+
+//========================================================================================================================================================
+
+
+.footer {
+  padding-top: 20px;
+  border-top: 1px solid #fff;
+
+  // .footer__container
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 1 100%;
+  }
+
+  // .footer__nav
+  &__nav {
+    & .nav {
+      flex: 0 1 100%;
+
+      // .nav__list
+      &__list {
+        flex-direction: column;
+      }
+
+      // .nav__item
+      &__item {}
+
+      // .nav__link
+      &__link {}
+    }
+  }
+
+  // .footer__rsschool
+  &__rsschool {
+    display: inline-flex;
+    flex: 0 1 50%;
+    width: 200px;
+    height: auto;
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+  }
+
+  // .footer__copy
+  &__copy {
+    padding: 20px 0;
+    border-top: 1px solid #fff;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

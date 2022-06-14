@@ -251,6 +251,7 @@ body {
 
 //========================================================================================================================================================
 .code {
+  @extend %sectionPadding;
 
   // .code__container
   &__container {}
@@ -278,5 +279,34 @@ body {
   &__example {
     line-height: 1.5;
     color: #000;
+  }
+}
+
+//========================================================================================================================================================
+
+
+.education {
+  @extend %sectionPadding;
+
+  // .education__container
+  &__container {}
+
+  // .education__title
+  &__title {
+    @extend %margin25;
+  }
+
+  // .education__list
+  &__list {
+    list-style-type: disc;
+    margin-left: 35px;
+  }
+
+  // .education__item
+  &__item {}
+
+  // .education__text
+  &__text {
+    @extend %description;
   }
 }

@@ -213,3 +213,30 @@ body {
 }
 
 //========================================================================================================================================================
+
+.skills {
+  @extend %sectionPadding;
+
+  // .skills__container
+  &__container {}
+
+  // .skills__title
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  // .skills__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+  }
+}
+
+.skill {
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+}

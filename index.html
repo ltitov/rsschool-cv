@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Artur Tsitou</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About Myself</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#code" class="nav__link">Code Example</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#languages" class="nav__link">Languages</a></li>
+                </ul>
+            </nav>
+            <a class="header__cv" href="/cv.md" download>Download CV</a>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">Hi i'm Tsitou Artur</h1>
+                <p class="hero__description">Junior Front-End Developer 👋</p>
+                <ul class="hero__contacts contacts">
+                    <li class="contact__item"><a href="mailto:itsitou88@gmail.com" class="contact__link">
+                            <svg fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24">
+                                <path d="M24 21H0V3h24v18zM1 5v15h22V5L12 15 1 5zm21-1H2l10 9 10-9z" />
+                            </svg>
+                            <span class="visually-hidden">Email</span>
+                        </a>
+                    </li>
+                    <li class="contact__item"><a href="https://github.com/ltitov/" class="contact__link">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0a12 12 0 0 0-4 23h1v-2c-3 0-4-2-4-2l-1-2c-1 0 0 0 0 0l2 1c1 2 2 1 3 1l1-2c-3 0-6-1-6-6l2-3V5l3 1a12 12 0 0 1 6 0l3-1v3l2 3c0 5-3 6-6 6l1 3v3h1a12 12 0 0 0-4-23z" />
+                            </svg>
+                            <span class="visually-hidden">Github</span>
+                        </a>
+                    </li>
+                    <li class="contact__item"><a href="https://www.linkedin.com/in/artur-tsitou-9baa81203/"
+                            class="contact__link">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M5 4 3 6 0 4c0-2 1-3 3-3s2 1 2 3zm0 4H0v16h5V8zm8 0H8v16h5v-8c0-5 6-5 6 0v8h5V14c0-8-9-8-11-4V8z" />
+                            </svg>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__image">
+                <img src="img/bear.png" alt="Avatar">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about__container">
+            <h2 class="about__title title">About Myself</h2>
+            <p class="about__description">My goal is to gain new knowledge that will help me become stronger and more
+                confident in the world of web development. My strengths are punctual, accuracy, organization, stress
+                tolerance, on the back of the medal is such qualities as: over fatigue, procrastination.</p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills__container">
+            <h2 class="skills__title title">Skills</h2>
+            <ul class="skills__list">
+                <li class="skill"><img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                        alt="html5" />
+                </li>
+                <li class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                        alt="css3" />
+                </li>
+                <li class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" alt="gulp" />
+                </li>
+                <li class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
+                        alt="git" />
+                </li>
+                <li class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                        alt="wordpress" />
+                </li>
+                <li class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg"
+                        alt="vscode" />
+                </li>
+                <li class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                        alt="mysql" />
+                </li>
+                <li class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                        alt="figma" />
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="code" id="code">
+        <div class="code__container">
+            <h2 class="code__title title">Code Example</h2>
+            <p class="code__description">Let’s start by defining a JavaScript function that conducts our bubble sort:
+            </p>
+            <pre class="code__markup">
+            <code class="code__example">                
+                function sortItems(array) {
+                    for (let i = 0; i &lt; array.length; i++) {
+                        for (let j = 0; j &lt; array.length; j++) {
+                            if (array[j] > array[j + 1]) {
+                                let temp = array[j];
+                                array[j] = array[j + 1];
+                                array[j + 1] = temp;
+                            }
+                        }
+                    }
+                    return array;
+                }
+            </code>
+        </pre>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <div class="education__container">
+            <h2 class="education__title title">Education</h2>
+            <ul class="education__list">
+                <li class="education__item">
+                    <p class="education__text">2021 Brest State Technical University – Higher education.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="languages" id="languages">
+        <div class="languages__container">
+            <h2 class="languages__title title">Languages</h2>
+            <ul class="languages__list">
+                <li class="languages__item">
+                    <p class="languages__text">Belarusian — Native</p>
+                </li>
+                <li class="languages__item">
+                    <p class="languages__text">Russian - Native</p>
+                </li>
+                <li class="languages__item">
+                    <p class="languages__text">English - Elementary (A1)</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <nav class="footer__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About Myself</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#code" class="nav__link">Code Example</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#languages" class="nav__link">Languages</a></li>
+                </ul>
+            </nav>
+            <a class="footer__rsschool" href="https://rs.school/js/">
+                <img src="https://rs.school/images/rs_school_js.svg" alt="RSSchool">
+            </a>
+        </div>
+        <div class="footer__copy">
+            2022 <a href="https://github.com/ltitov/">My Github</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

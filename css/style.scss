@@ -310,3 +310,30 @@ body {
     @extend %description;
   }
 }
+
+//========================================================================================================================================================
+.languages {
+  @extend %sectionPadding;
+
+  // .languages__container
+  &__container {}
+
+  // .languages__title
+  &__title {
+    @extend %margin25;
+  }
+
+  // .languages__list
+  &__list {
+    list-style-type: disc;
+    margin-left: 35px;
+  }
+
+  // .languages__item
+  &__item {}
+
+  // .languages__text
+  &__text {
+    @extend %description;
+  }
+}

@@ -26,6 +26,7 @@
             <a class="header__cv" href="/cv.md" download>Download CV</a>
         </div>
     </header>
+
     <section class="hero">
         <div class="hero__container">
             <div class="hero__content">
@@ -101,6 +102,31 @@
             </ul>
         </div>
     </section>
+
+    <section class="code">
+        <div class="code__container">
+            <h2 class="code__title title">Code Example</h2>
+            <p class="code__description">Let’s start by defining a JavaScript function that conducts our bubble sort:
+            </p>
+            <pre class="code__markup">
+            <code class="code__example">                
+                function sortItems(array) {
+                    for (let i = 0; i < array.length; i++) {
+                        for (let j = 0; j < array.length; j++) {
+                            if (array[j] > array[j + 1]) {
+                                let temp = array[j];
+                                array[j] = array[j + 1];
+                                array[j + 1] = temp;
+                            }
+                        }
+                    }
+                    return array;
+                }
+            </code>
+        </pre>
+        </div>
+    </section>
+
 </body>
 
 </html>

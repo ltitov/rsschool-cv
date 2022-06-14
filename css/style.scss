@@ -14,6 +14,17 @@ body {
   padding: 80px 0;
 }
 
+%margin25 {
+  margin-bottom: 25px;
+}
+
+%description {
+  max-width: 650px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -111,7 +122,7 @@ body {
 
   // .hero__title
   &__title {
-    margin-bottom: 25px;
+    @extend %margin25;
     font-weight: 700;
     font-size: 48px;
     line-height: 72px;
@@ -119,7 +130,7 @@ body {
 
   // .hero__description
   &__description {
-    margin-bottom: 25px;
+    @extend %margin25;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
@@ -200,15 +211,12 @@ body {
 
   // .about__title
   &__title {
-    margin-bottom: 25px;
+    @extend %margin25;
   }
 
   // .about__description
   &__description {
-    max-width: 650px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: calc(28 / 18);
+    @extend %description;
   }
 }
 
@@ -222,7 +230,7 @@ body {
 
   // .skills__title
   &__title {
-    margin-bottom: 50px;
+    @extend %margin25;
     text-align: center;
   }
 
@@ -238,5 +246,37 @@ body {
   img {
     max-width: 80%;
     height: auto;
+  }
+}
+
+//========================================================================================================================================================
+.code {
+
+  // .code__container
+  &__container {}
+
+  // .code__title
+  &__title {
+    @extend %margin25;
+  }
+
+  // .code__description
+  &__description {
+    @extend %description;
+    @extend %margin25;
+  }
+
+  // .code__markup
+  &__markup {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #f4f4f4;
+    border-radius: 14px;
+  }
+
+  // .code__example
+  &__example {
+    line-height: 1.5;
+    color: #000;
   }
 }
